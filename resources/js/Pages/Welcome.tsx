@@ -20,7 +20,7 @@ export default function Welcome({
             <Head title="Welcome" />
             <div className="bg-gray-50">
                 <div className="bg-beige pb-20 m-4 rounded-lg">
-                    <div className="mx-32 m-auto">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <nav className="flex justify-between py-2">
                             <div className="flex justify-center gap-6 items-center">
                                 <h2 className="font-bold text-2xl">Zai<span className="text-navy">POS</span></h2>
@@ -60,7 +60,7 @@ export default function Welcome({
                         </nav>
 
                         <main className='mt-36 flex justify-start gap-10'>
-                            <div className='w-full'>
+                            <div className='w-full mt-20'>
                                 <h2 className='text-5xl font-bold mb-2'>Solusi POS Ideal untuk Kafe dan Restoran</h2>
                                 <p>Kelola pesanan meja, stok bahan baku, hingga laporan penjualan harian dengan satu aplikasi yang dirancang khusus untuk kafe dan restoran.</p>
 
@@ -72,7 +72,7 @@ export default function Welcome({
 
                             <div className='w-full'>
                                 <div className=''>
-                                    <img src={HeroImg} alt="" className='rounded-ss-[80px]'/>
+                                    <img src={HeroImg} alt="" className='rounded-ss-[80px] w-4/5 m-auto'/>
                                 </div>
                             </div>
                         </main>
