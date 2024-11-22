@@ -45,9 +45,9 @@ export default function Authenticated({
 
                             <p className='text-gray-400 mb-2 mt-4 font-semibold text-xs'>INVENTORY</p>
                             <div className='flex flex-col gap-2'>
-                                <SideLink href="" active={false}>
+                                <SideLink href={route('item.index')} active={route().current('item.index')}>
                                     <MdEmojiFoodBeverage size={24} />
-                                    Product
+                                    Items
                                 </SideLink>
 
                                 <SideLink href={route('category.index')} active={route().current('category.index')}>
@@ -102,8 +102,8 @@ export default function Authenticated({
                 <div className='w-full flex flex-col  h-screen justify-between'>
                     <main className=''>
                         {header && (
-                            <header className="">
-                                <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+                            <header className="me-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+                                <div className="">
                                     {header}
                                 </div>
                             </header>

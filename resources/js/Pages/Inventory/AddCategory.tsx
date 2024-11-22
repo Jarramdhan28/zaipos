@@ -7,9 +7,9 @@ export default function AddCategory() {
     const initialCategory = { name: "" };
     const [categories, setCategories] = useState([initialCategory]);
 
-    const { post, reset } = useForm({
-        categories,
-    });
+    // const { post, reset } = useForm({
+    //     categories,
+    // });
 
     const handleInputChange = (index: number, value: string) => {
         const updateCategories = [...categories];
